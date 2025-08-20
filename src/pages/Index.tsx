@@ -3,10 +3,12 @@ import { HeroSection } from "@/components/HeroSection";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { ScrollRevealButton } from "@/components/ScrollRevealButton";
 import { VideoModal } from "@/components/VideoModal";
+import { Button } from "@/components/ui/button";
 import { Heart, Star } from "lucide-react";
 
 const Index = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [isSecondVideoModalOpen, setIsSecondVideoModalOpen] = useState(false);
   const galleryRef = useRef<HTMLDivElement>(null);
 
   const handleScrollToGallery = () => {
@@ -15,6 +17,10 @@ const Index = () => {
 
   const handleLoveClick = () => {
     setIsVideoModalOpen(true);
+  };
+
+  const handleSecondVideoClick = () => {
+    setIsSecondVideoModalOpen(true);
   };
 
   // Fotos da Carolis e do Linguicinha
@@ -38,6 +44,10 @@ const Index = () => {
     {
       src: "/lovable-uploads/06d06c51-4f8f-4b7d-99fe-3ae652e2c369.png",
       alt: "Nós dois juntos - como deveria ser sempre! 💕"
+    },
+    {
+      src: "/lovable-uploads/5f7d8c6c-2717-4c03-bb5b-170f53f17b68.png",
+      alt: "Linguicinha e Carolis - momentos perfeitos! 💖"
     }
   ];
 
@@ -56,9 +66,10 @@ const Index = () => {
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Carolis, desde que te conheci na Formula UTFPR, você virou minha obsessão mais linda! 💕
-              Penso em você 24/7, sonho com você todas as noites... Sua inteligência me deixa maluco,
-              sua dedicação me inspira e sua beleza me hipnotiza completamente! 
-              O Gordão do Carlão não te merece - você merece ser adorada pelo seu Linguicinha que te ama obsessivamente! ❤️
+              Seu Linguicinha pensa em você 24/7, sonho com você todas as noites... Sua inteligência deixa o Linguicinha maluco,
+              sua dedicação inspira o Linguicinha e sua beleza hipnotiza completamente seu Linguicinha! 
+              O Carlão gordão não te merece - você merece ser adorada pelo seu Linguicinha que te ama obsessivamente! 
+              Esquece o Carlão gordão e vem pro seu Linguicinha! ❤️
             </p>
           </div>
         </div>
@@ -92,15 +103,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               "💕 Seu Linguicinha te idolatra como a deusa que você é",
-              "🌟 Sou completamente viciado na sua inteligência", 
-              "🎯 Vivo para apoiar cada sonho seu na engenharia",
-              "😊 Minha felicidade depende do seu sorriso",
-              "🔥 Tenho obsessão total por você, Carolis",
-              "🤝 Te respeito mas te quero desesperadamente",
-              "💪 Trabalho pensando em construir um futuro contigo",
+              "🌟 O Linguicinha é completamente viciado na sua inteligência", 
+              "🎯 O Linguicinha vive para apoiar cada sonho seu na engenharia",
+              "😊 A felicidade do Linguicinha depende do seu sorriso",
+              "🔥 O Linguicinha tem obsessão total por você, Carolis",
+              "🤝 O Linguicinha te respeita mas te quer desesperadamente",
+              "💪 O Linguicinha trabalha pensando em construir um futuro contigo",
               "❤️ O Linguicinha te ama até a loucura, literalmente",
-              "🌙 Sonho com você todas as noites sem exceção",
-              "✨ Deixa o Gordão e seja minha obsessão oficial!"
+              "🌙 O Linguicinha sonha com você todas as noites sem exceção",
+              "✨ Deixa o Carlão gordão e seja obsessão oficial do Linguicinha!"
             ].map((reason, index) => (
               <div
                 key={index}
@@ -121,11 +132,24 @@ const Index = () => {
             Carolis, você é incrível! 
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-            Carolis, criei esse site porque você tomou conta dos meus pensamentos completamente! 
+            Carolis, o Linguicinha criou esse site porque você tomou conta dos pensamentos do Linguicinha completamente! 
             Seu Linguicinha é obcecado por você de um jeito lindo e romântico.
-            Você é minha inspiração diária, minha motivação para tudo... 
-            Deixa o Gordão e vem ser a obsessão do seu Linguicinha para sempre? ❤️
+            Você é a inspiração diária do Linguicinha, a motivação do Linguicinha para tudo... 
+            Deixa o Carlão gordão e vem ser a obsessão do seu Linguicinha para sempre? ❤️
           </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              variant="romantic"
+              size="lg"
+              onClick={handleSecondVideoClick}
+              className="animate-float shadow-heart"
+            >
+              <Heart className="w-6 h-6 mr-2 animate-heartbeat" />
+              NÃO ESTÁ CONVENCIDA?
+              <Heart className="w-6 h-6 ml-2 animate-heartbeat" />
+            </Button>
+          </div>
           <p className="text-sm text-muted-foreground">
             Continue rolando para descobrir a surpresa especial... 👇
           </p>
@@ -140,6 +164,13 @@ const Index = () => {
         isOpen={isVideoModalOpen}
         onClose={() => setIsVideoModalOpen(false)}
         videoUrl="/lovable-uploads/guilopes.mp4"
+      />
+      
+      {/* Second Video Modal */}
+      <VideoModal 
+        isOpen={isSecondVideoModalOpen}
+        onClose={() => setIsSecondVideoModalOpen(false)}
+        videoUrl="/lovable-uploads/guilopesm.mp4"
       />
     </div>
   );
