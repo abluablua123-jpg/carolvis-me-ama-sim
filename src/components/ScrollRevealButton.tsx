@@ -4,9 +4,10 @@ import { Heart } from "lucide-react";
 
 interface ScrollRevealButtonProps {
   onLoveClick: () => void;
+  onSecondVideoClick: () => void;
 }
 
-export const ScrollRevealButton = ({ onLoveClick }: ScrollRevealButtonProps) => {
+export const ScrollRevealButton = ({ onLoveClick, onSecondVideoClick }: ScrollRevealButtonProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -34,16 +35,29 @@ export const ScrollRevealButton = ({ onLoveClick }: ScrollRevealButtonProps) => 
           : "opacity-0 translate-y-12 pointer-events-none"
       }`}
     >
-      <Button
-        variant="romantic"
-        size="lg"
-        onClick={onLoveClick}
-        className="animate-float shadow-heart"
-      >
-        <Heart className="w-6 h-6 mr-2 animate-heartbeat" />
-        VOLTA PRO LINGUICINHA
-        <Heart className="w-6 h-6 ml-2 animate-heartbeat" />
-      </Button>
+      <div className="flex flex-col gap-3 items-center">
+        <Button
+          variant="romantic"
+          size="lg"
+          onClick={onLoveClick}
+          className="animate-float shadow-heart"
+        >
+          <Heart className="w-6 h-6 mr-2 animate-heartbeat" />
+          VOLTA PRO LINGUICINHA
+          <Heart className="w-6 h-6 ml-2 animate-heartbeat" />
+        </Button>
+        
+        <Button
+          variant="outline"
+          size="lg"
+          onClick={onSecondVideoClick}
+          className="animate-float shadow-heart border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+        >
+          <Heart className="w-5 h-5 mr-2 animate-heartbeat" />
+          NÃO ESTÁ CONVENCIDA?
+          <Heart className="w-5 h-5 ml-2 animate-heartbeat" />
+        </Button>
+      </div>
     </div>
   );
 };

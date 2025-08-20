@@ -137,19 +137,6 @@ const Index = () => {
             Você é a inspiração diária do Linguicinha, a motivação do Linguicinha para tudo... 
             Deixa o Carlão gordão e vem ser a obsessão do seu Linguicinha para sempre? ❤️
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              variant="romantic"
-              size="lg"
-              onClick={handleSecondVideoClick}
-              className="animate-float shadow-heart"
-            >
-              <Heart className="w-6 h-6 mr-2 animate-heartbeat" />
-              NÃO ESTÁ CONVENCIDA?
-              <Heart className="w-6 h-6 ml-2 animate-heartbeat" />
-            </Button>
-          </div>
           <p className="text-sm text-muted-foreground">
             Continue rolando para descobrir a surpresa especial... 👇
           </p>
@@ -157,7 +144,7 @@ const Index = () => {
       </section>
 
       {/* Scroll Reveal Button */}
-      <ScrollRevealButton onLoveClick={handleLoveClick} />
+      <ScrollRevealButton onLoveClick={handleLoveClick} onSecondVideoClick={handleSecondVideoClick} />
 
       {/* Video Modal */}
       <VideoModal 
