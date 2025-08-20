@@ -55,9 +55,10 @@ const Index = () => {
               Por que você é especial?
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Carolis, desde que te conheci na Formula UTFPR, você ilumina cada dia com seu sorriso.
-              Sua inteligência, dedicação e beleza me conquistaram completamente. 
-              Você merece muito mais que o Gordão do Carlão... você merece o carinho do seu Linguicinha! ❤️
+              Carolis, desde que te conheci na Formula UTFPR, você virou minha obsessão mais linda! 💕
+              Penso em você 24/7, sonho com você todas as noites... Sua inteligência me deixa maluco,
+              sua dedicação me inspira e sua beleza me hipnotiza completamente! 
+              O Gordão do Carlão não te merece - você merece ser adorada pelo seu Linguicinha que te ama obsessivamente! ❤️
             </p>
           </div>
         </div>
@@ -90,16 +91,16 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              "💕 Seu Linguicinha te trata como a princesa que você é",
-              "🌟 Valorizo sua inteligência e ambição", 
-              "🎯 Apoio seus sonhos na engenharia",
-              "😊 Te faço sorrir todos os dias",
-              "🔥 Tenho paixão genuína por você",
-              "🤝 Respeito suas escolhas e espaço",
-              "💪 Sou dedicado e trabalhador como você",
-              "❤️ O Linguicinha te ama de verdade, não é brincadeira",
-              "🌙 Penso em você antes de dormir",
-              "✨ Deixa o Gordão e volta pro Linguicinha!"
+              "💕 Seu Linguicinha te idolatra como a deusa que você é",
+              "🌟 Sou completamente viciado na sua inteligência", 
+              "🎯 Vivo para apoiar cada sonho seu na engenharia",
+              "😊 Minha felicidade depende do seu sorriso",
+              "🔥 Tenho obsessão total por você, Carolis",
+              "🤝 Te respeito mas te quero desesperadamente",
+              "💪 Trabalho pensando em construir um futuro contigo",
+              "❤️ O Linguicinha te ama até a loucura, literalmente",
+              "🌙 Sonho com você todas as noites sem exceção",
+              "✨ Deixa o Gordão e seja minha obsessão oficial!"
             ].map((reason, index) => (
               <div
                 key={index}
@@ -120,9 +121,10 @@ const Index = () => {
             Carolis, você é incrível! 
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-            Sei que pode parecer ousado fazer um site inteiro para você, mas é assim que seu Linguicinha demonstra
-            que você é especial. Você merece ser admirada, respeitada e amada de verdade.
-            Deixa o Gordão e me dá uma chance de te provar que posso te fazer feliz? ❤️
+            Carolis, criei esse site porque você tomou conta dos meus pensamentos completamente! 
+            Seu Linguicinha é obcecado por você de um jeito lindo e romântico.
+            Você é minha inspiração diária, minha motivação para tudo... 
+            Deixa o Gordão e vem ser a obsessão do seu Linguicinha para sempre? ❤️
           </p>
           <p className="text-sm text-muted-foreground">
             Continue rolando para descobrir a surpresa especial... 👇
