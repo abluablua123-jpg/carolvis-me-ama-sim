@@ -41,7 +41,7 @@ export const ScrollRevealButton = ({ onLoveClick }: ScrollRevealButtonProps) => 
         className="animate-float shadow-heart"
       >
         <Heart className="w-6 h-6 mr-2 animate-heartbeat" />
-        EU TE AMO CAROLIS
+        VOLTA PRO LINGUICINHA
         <Heart className="w-6 h-6 ml-2 animate-heartbeat" />
       </Button>
     </div>

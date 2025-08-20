@@ -17,7 +17,7 @@ const Index = () => {
     setIsVideoModalOpen(true);
   };
 
-  // Fotos da Carolis (usando as imagens enviadas e algumas placeholders)
+  // Fotos da Carolis e do Linguicinha
   const photos = [
     {
       src: "/lovable-uploads/360decac-1007-4a20-a5e3-ec251184111b.png",
@@ -27,7 +27,18 @@ const Index = () => {
       src: "/lovable-uploads/17d60750-49cf-4be4-9e5e-fc2f7d12ba5c.png", 
       alt: "Momentos especiais juntos 💕"
     },
-    // Adicionar mais fotos quando fornecidas
+    {
+      src: "/lovable-uploads/e02c4073-e8e6-4186-955e-33012a246928.png",
+      alt: "Carolis radiante como sempre ✨"
+    },
+    {
+      src: "/lovable-uploads/4de3070d-d7d5-4989-b942-e391755c76de.png",
+      alt: "Seu Linguicinha te esperando 💙"
+    },
+    {
+      src: "/lovable-uploads/06d06c51-4f8f-4b7d-99fe-3ae652e2c369.png",
+      alt: "Nós dois juntos - como deveria ser sempre! 💕"
+    }
   ];
 
   return (
@@ -46,7 +57,7 @@ const Index = () => {
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
               Carolis, desde que te conheci na Formula UTFPR, você ilumina cada dia com seu sorriso.
               Sua inteligência, dedicação e beleza me conquistaram completamente. 
-              Você merece muito mais que o Gordão do Carlão... você merece alguém que te valorize de verdade! ❤️
+              Você merece muito mais que o Gordão do Carlão... você merece o carinho do seu Linguicinha! ❤️
             </p>
           </div>
         </div>
@@ -79,16 +90,16 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              "💕 Te trato como a princesa que você é",
+              "💕 Seu Linguicinha te trata como a princesa que você é",
               "🌟 Valorizo sua inteligência e ambição", 
               "🎯 Apoio seus sonhos na engenharia",
               "😊 Te faço sorrir todos os dias",
               "🔥 Tenho paixão genuína por você",
               "🤝 Respeito suas escolhas e espaço",
-              "💪 Sou dedicado e trabalhador",
-              "❤️ Te amo de verdade, não é brincadeira",
+              "💪 Sou dedicado e trabalhador como você",
+              "❤️ O Linguicinha te ama de verdade, não é brincadeira",
               "🌙 Penso em você antes de dormir",
-              "✨ Você merece alguém que te complete"
+              "✨ Deixa o Gordão e volta pro Linguicinha!"
             ].map((reason, index) => (
               <div
                 key={index}
@@ -109,9 +120,9 @@ const Index = () => {
             Carolis, você é incrível! 
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-            Sei que pode parecer ousado fazer um site inteiro para você, mas é assim que demonstro
+            Sei que pode parecer ousado fazer um site inteiro para você, mas é assim que seu Linguicinha demonstra
             que você é especial. Você merece ser admirada, respeitada e amada de verdade.
-            Me dá uma chance de te provar que posso te fazer feliz? ❤️
+            Deixa o Gordão e me dá uma chance de te provar que posso te fazer feliz? ❤️
           </p>
           <p className="text-sm text-muted-foreground">
             Continue rolando para descobrir a surpresa especial... 👇

@@ -27,7 +27,7 @@ export const VideoModal = ({ isOpen, onClose, videoUrl }: VideoModalProps) => {
         </div>
         
         <DialogDescription className="text-center text-muted-foreground mb-6">
-          Um vídeo especial feito com amor para você ❤️
+          Carolis, volta pra mim eu te amo! Deixa o gordão do carlão e volta pro seu Linguicinha ❤️
         </DialogDescription>
 
         <div className="w-full h-[400px] bg-muted rounded-lg flex items-center justify-center shadow-soft">
