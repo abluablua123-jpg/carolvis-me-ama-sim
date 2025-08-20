@@ -139,7 +139,7 @@ const Index = () => {
       <VideoModal 
         isOpen={isVideoModalOpen}
         onClose={() => setIsVideoModalOpen(false)}
-        videoUrl="/lovable-uploads/WhatsApp Video 2025-08-19 at 23.42.09.mp4"
+        videoUrl="/lovable-uploads/guilopes.mp4"
       />
     </div>
   );
