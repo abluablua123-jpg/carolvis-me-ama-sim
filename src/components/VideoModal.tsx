@@ -34,9 +34,18 @@ export const VideoModal = ({ isOpen, onClose, videoUrl }: VideoModalProps) => {
           {videoUrl ? (
             <video
               controls
+              preload="metadata"
               className="w-full h-full object-cover rounded-lg"
               src={videoUrl}
+              style={{ maxWidth: '100%', maxHeight: '100%' }}
+              onError={(e) => {
+                console.error('Erro ao carregar vídeo:', e);
+                console.log('URL do vídeo:', videoUrl);
+              }}
+              onLoadStart={() => console.log('Iniciando carregamento do vídeo')}
+              onCanPlay={() => console.log('Vídeo pode ser reproduzido')}
             >
+              <source src={videoUrl} type="video/mp4" />
               Seu navegador não suporta vídeos.
             </video>
           ) : (
